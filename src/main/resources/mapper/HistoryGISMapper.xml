@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 声明该 XML 文件为 MyBatis 的映射文件，指定了 DTD 信息 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- mapper 标签是 MyBatis 映射文件的根标签，namespace 指定了该映射文件对应的 DAO 接口的全限定名 -->
+<mapper namespace="com.history.gishistorymap.dao.MapDao" >
+    <!-- resultMap 标签用于定义数据库表字段与 Java 对象属性之间的映射关系 -->
+    <!-- id 是该 resultMap 的唯一标识，type 指定了映射的 Java 对象类型 -->
+    <resultMap id="geometryModelResult" type="com.history.gishistorymap.model.GeometryModel">
+        <!-- result 标签用于具体指定数据库表的列与 Java 对象属性的映射 -->
+        <!-- property 是 Java 对象的属性名，column 是数据库表的列名，jdbcType 是该列在 JDBC 中的数据类型 -->
+        <result property="gId" column="gid" jdbcType="BIGINT"/>
+        <result property="namePy" column="name_py" jdbcType="VARCHAR"/>
+        <result property="nameCh" column="name_ch" jdbcType="VARCHAR"/>
+        <result property="nameFt" column="name_ft" jdbcType="VARCHAR"/>
+        <result property="presLoc" column="pres_loc" jdbcType="VARCHAR"/>
+        <result property="typePy" column="type_py" jdbcType="VARCHAR"/>
+        <result property="typeCh" column="type_ch" jdbcType="VARCHAR"/>
+        <result property="levRank" column="lev_rank" jdbcType="VARCHAR"/>
+        <result property="begYr" column="beg_yr" jdbcType="BIGINT"/>
+        <result property="begRule" column="beg_rule" jdbcType="VARCHAR"/>
+        <result property="endYr" column="end_yr" jdbcType="BIGINT"/>
+        <result property="endRule" column="end_rule" jdbcType="VARCHAR"/>
+        <result property="geoSrc" column="geo_src" jdbcType="VARCHAR"/>
+        <result property="compiler" column="compiler" jdbcType="VARCHAR"/>
+        <result property="gecomplr" column="gecomplr" jdbcType="VARCHAR"/>
+        <result property="checker" column="checker" jdbcType="VARCHAR"/>
+        <result property="entDate" column="ent_date" jdbcType="VARCHAR"/>
+        <result property="begChgTy" column="beg_chg_ty" jdbcType="VARCHAR"/>
+        <result property="endChgTy" column="end_chg_ty" jdbcType="VARCHAR"/>
+        <!-- 对于 geometry 属性，指定了自定义的类型处理器，用于处理几何类型数据 -->
+        <result property="geometry" column="geom" typeHandler="com.history.gishistorymap.mybatis.GeometryTypeHandler"/>
+    </resultMap>
+    <!-- sql 标签用于定义可复用的 SQL 片段 -->
+    <!-- 这里定义了县级点数据对应的表名 -->
+    <sql id="CNTY_PTS">
+        v6_time_cnty_pts_utf_wgs84
+    </sql>
+    <!-- 定义了府级点数据对应的表名 -->
+    <sql id="PREF_PTS">
+        v6_time_pref_pts_utf_wgs84
+    </sql>
+    <!-- 定义了府级多边形数据对应的表名 -->
+    <sql id="PREF_PGN">
+        v6_time_pref_pgn_utf_wgs84
+    </sql>
+    <!-- 定义了查询时需要使用的基础列名 -->
+    <sql id="BASE_COLUMN">
+        gid,name_py,name_ch,name_ft,pres_loc,type_py,type_ch,lev_rank,beg_yr,beg_rule,end_yr,end_rule,geo_src,compiler,gecomplr,checker,ent_date,beg_chg_ty,end_chg_ty,geom
+    </sql>
+    <!-- select 标签用于定义查询语句 -->
+    <!-- id 对应 DAO 接口中的方法名，resultMap 指定使用的结果映射 -->
+    <select id="getCntyPoint" resultMap="geometryModelResult">
+        SELECT
+        <!-- include 标签用于引用之前定义的 SQL 片段 -->
+        <include refid="BASE_COLUMN"></include>
+        FROM
+        <include refid="CNTY_PTS"/>
+        <!-- 使用 #{gId} 进行参数占位，会将传入的 gId 参数值填充到此处 -->
+        WHERE gid=#{gId} LIMIT 1
+    </select>
+    <!-- 查询府级多边形数据的 SQL 语句 -->
+    <select id="getprefPolygon" resultMap="geometryModelResult">
+        SELECT
+        <include refid="BASE_COLUMN"></include>
+        FROM
+        <include refid="PREF_PGN"/>
+        WHERE gid=#{gId} LIMIT 1
+    </select>
+    <!-- 查询府级点数据的 SQL 语句 -->
+    <select id="getPrefPoint" resultMap="geometryModelResult">
+        SELECT
+        <include refid="BASE_COLUMN"></include>
+        FROM
+        <include refid="PREF_PTS"/>
+        WHERE gid=#{gId} LIMIT 1
+    </select>
+</mapper>

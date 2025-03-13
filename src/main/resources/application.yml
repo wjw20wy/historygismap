@@ -1,0 +1,59 @@
+# 服务器相关配置
+server:
+  # 应用程序启动后监听的端口号，这里设置为 8081，意味着外部可通过该端口访问应用
+  port: 8081
+  servlet:
+    # 应用程序的上下文路径，设置为 / 表示应用的根路径就是默认根路径
+    # 例如访问 http://localhost:8081 即可访问该应用
+    context-path: /
+
+# Spring 相关配置，这里主要是数据源配置
+spring:
+  datasource:
+    # 数据库连接的 URL，指定了使用 PostgreSQL 数据库，连接本地的 5432 端口，数据库名为 postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    # 连接数据库使用的用户名
+    username: postgres
+    # 连接数据库使用的密码
+    password: 151657
+    # 数据库驱动类，这里使用 PostgreSQL 的驱动类
+    driver-class-name: org.postgresql.Driver
+    # 数据源类型，使用阿里巴巴的 Druid 数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 数据源初始化时创建的连接数量
+      initial-size: 8
+      # 连接池中的最小空闲连接数量
+      min-idle: 5
+      # 连接池中的最大活动连接数量
+      max-active: 10
+      filter:
+        stat:
+          # 启用 Druid 的统计过滤器，可用于统计 SQL 执行情况等信息
+          enabled: true
+
+# MyBatis 相关配置
+mybatis:
+  # 指定 MyBatis 的 Mapper XML 文件所在位置，这里表示在类路径下的 mapper 目录中查找所有 XML 文件
+  mapper-locations: classpath:mapper/*.xml
+  # 指定 MyBatis 的类型别名包，MyBatis 会自动为该包下的类创建别名，方便在 XML 映射文件中使用
+  type-aliases-package: com.history.gishistorymap.model
+  configuration:
+    # 配置 MyBatis 的日志实现类，这里设置为将 SQL 语句输出到控制台
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 日志相关配置
+logging:
+  level:
+    # 设置 Spring Web 模块的日志级别为 DEBUG，可输出更详细的 Web 请求处理信息
+    org.springframework.web: DEBUG
+    # 设置自定义 DAO 层包的日志级别为 TRACE，可输出最详细的 DAO 层操作信息
+    com.history.gishistorymap.dao: TRACE
+    # 设置 MyBatis 核心模块的日志级别为 TRACE，可输出 MyBatis 的详细执行信息
+    org.mybatis: TRACE
+    # 设置 PostgreSQL 驱动的日志级别为 DEBUG，可输出数据库连接和操作的详细信息
+    org.postgresql: DEBUG
+    # 设置 java.sql.Statement 类的日志级别为 DEBUG，可输出 SQL 语句的执行信息
+    java.sql.Statement: DEBUG
+  # 指定日志配置文件的位置，使用类路径下的 logback-boot.xml 文件来配置日志
+  config: classpath:logback-boot.xml

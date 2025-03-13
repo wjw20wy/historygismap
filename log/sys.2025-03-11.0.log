@@ -1,0 +1,14 @@
+2025-03-11 17:38:53,524 INFO (StartupInfoLogger.java:53)- Starting GishistorymapApplication using Java 23.0.1 with PID 19440 (C:\Users\伍建玮\IdeaProjects\gishistorymap\target\classes started by 伍建玮 in C:\Users\伍建玮\IdeaProjects\GISHISTORYMAP)
+2025-03-11 17:38:53,527 INFO (SpringApplication.java:652)- No active profile set, falling back to 1 default profile: "default"
+2025-03-11 17:39:09,024 INFO (StartupInfoLogger.java:59)- Started GishistorymapApplication in 15.973 seconds (process running for 16.601)
+2025-03-11 17:40:36,389 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
+2025-03-11 17:40:42,515 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-5000，截至时间：-221
+2025-03-11 17:40:42,522 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
+2025-03-11 21:30:29,098 INFO (StartupInfoLogger.java:53)- Starting GishistorymapApplication using Java 23.0.1 with PID 24648 (C:\Users\伍建玮\IdeaProjects\gishistorymap\target\classes started by 伍建玮 in C:\Users\伍建玮\IdeaProjects\GISHISTORYMAP)
+2025-03-11 21:30:29,100 INFO (SpringApplication.java:652)- No active profile set, falling back to 1 default profile: "default"
+2025-03-11 21:30:44,294 INFO (StartupInfoLogger.java:59)- Started GishistorymapApplication in 15.639 seconds (process running for 16.254)
+2025-03-11 21:31:51,235 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-221，截至时间：220
+2025-03-11 21:39:53,112 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-201，截至时间：220
+2025-03-11 21:39:53,133 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-201，截至时间：220
+2025-03-11 21:39:53,300 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-201，截至时间：220
+2025-03-11 21:40:31,209 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-221，截至时间：220

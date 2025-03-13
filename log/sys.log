@@ -1,0 +1,60 @@
+2025-03-12 08:11:47,304 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:11:47,916 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-220，截至时间：-202
+2025-03-12 08:11:47,919 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:11:47,919 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 08:11:47,950 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-220，截至时间：-202
+2025-03-12 08:14:29,105 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-220，截至时间：-202
+2025-03-12 08:14:29,106 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:14:29,106 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 08:14:29,108 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-201，截至时间：220
+2025-03-12 08:14:29,160 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-220，截至时间：-202
+2025-03-12 08:14:29,161 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-201，截至时间：220
+2025-03-12 08:14:29,359 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-201，截至时间：220
+2025-03-12 08:14:30,372 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:14:30,376 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-201，截至时间：220
+2025-03-12 08:14:30,402 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-201，截至时间：220
+2025-03-12 08:14:30,597 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-201，截至时间：220
+2025-03-12 08:14:31,551 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-220，截至时间：-202
+2025-03-12 08:14:31,559 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-201，截至时间：220
+2025-03-12 08:14:31,566 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:14:31,581 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 08:14:31,612 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-201，截至时间：220
+2025-03-12 08:14:31,684 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-220，截至时间：-202
+2025-03-12 08:14:31,809 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-201，截至时间：220
+2025-03-12 08:14:33,670 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:14:33,671 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-201，截至时间：220
+2025-03-12 08:14:33,814 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-201，截至时间：220
+2025-03-12 08:14:34,133 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-201，截至时间：220
+2025-03-12 08:16:20,412 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:16:23,796 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 08:16:23,879 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：590，截至时间：907
+2025-03-12 08:16:23,889 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：590，截至时间：907
+2025-03-12 08:16:24,780 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：590，截至时间：907
+2025-03-12 08:18:25,482 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-5000，截至时间：-221
+2025-03-12 10:01:50,412 INFO (StartupInfoLogger.java:53)- Starting GishistorymapApplication using Java 23.0.1 with PID 26036 (C:\Users\伍建玮\IdeaProjects\gishistorymap\target\classes started by 伍建玮 in C:\Users\伍建玮\IdeaProjects\GISHISTORYMAP)
+2025-03-12 10:01:50,413 INFO (SpringApplication.java:652)- No active profile set, falling back to 1 default profile: "default"
+2025-03-12 10:02:05,170 INFO (StartupInfoLogger.java:59)- Started GishistorymapApplication in 15.22 seconds (process running for 15.928)
+2025-03-12 10:03:51,054 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 10:03:55,397 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 10:03:55,424 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：590，截至时间：907
+2025-03-12 10:03:58,808 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 10:04:02,285 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 10:04:02,344 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-220，截至时间：-202
+2025-03-12 10:17:32,674 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-220，截至时间：-202
+2025-03-12 10:17:32,678 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：-220，截至时间：-202
+2025-03-12 10:17:32,753 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-220，截至时间：-202
+2025-03-12 10:17:37,494 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：1369，截至时间：1644
+2025-03-12 10:17:37,503 INFO (MapController.java:104)- 入参类别：cntypts，起始时间：1369，截至时间：1644
+2025-03-12 10:17:38,363 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：1369，截至时间：1644
+2025-03-12 15:33:15,489 INFO (StartupInfoLogger.java:53)- Starting GishistorymapApplication using Java 23.0.1 with PID 220 (C:\Users\伍建玮\IdeaProjects\gishistorymap\target\classes started by 伍建玮 in C:\Users\伍建玮\IdeaProjects\GISHISTORYMAP)
+2025-03-12 15:33:15,491 INFO (SpringApplication.java:652)- No active profile set, falling back to 1 default profile: "default"
+2025-03-12 15:33:42,207 INFO (StartupInfoLogger.java:59)- Started GishistorymapApplication in 27.246 seconds (process running for 28.138)
+2025-03-12 15:34:41,244 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
+2025-03-12 17:28:43,701 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
+2025-03-12 17:28:44,098 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-201，截至时间：220
+2025-03-12 17:28:45,054 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
+2025-03-12 17:28:45,469 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
+2025-03-12 17:28:45,825 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-201，截至时间：220
+2025-03-12 17:28:46,288 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
+2025-03-12 17:28:47,170 INFO (MapController.java:104)- 入参类别：prefpts，起始时间：-201，截至时间：220
+2025-03-12 17:28:47,179 INFO (MapController.java:104)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221

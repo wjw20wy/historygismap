@@ -1,0 +1,9 @@
+2025-03-09 18:30:30,500 INFO (StartupInfoLogger.java:53)- Starting GishistorymapApplication using Java 23.0.1 with PID 22312 (C:\Users\伍建玮\IdeaProjects\gishistorymap\target\classes started by 伍建玮 in C:\Users\伍建玮\IdeaProjects\GISHISTORYMAP)
+2025-03-09 18:30:30,502 INFO (SpringApplication.java:652)- No active profile set, falling back to 1 default profile: "default"
+2025-03-09 18:30:47,536 INFO (StartupInfoLogger.java:59)- Started GishistorymapApplication in 17.457 seconds (process running for 18.057)
+2025-03-09 18:30:53,077 INFO (StartupInfoLogger.java:53)- Starting GishistorymapApplication using Java 23.0.1 with PID 22312 (C:\Users\伍建玮\IdeaProjects\gishistorymap\target\classes started by 伍建玮 in C:\Users\伍建玮\IdeaProjects\GISHISTORYMAP)
+2025-03-09 18:30:53,078 INFO (SpringApplication.java:652)- No active profile set, falling back to 1 default profile: "default"
+2025-03-09 18:30:54,999 INFO (StartupInfoLogger.java:53)- Starting GishistorymapApplication using Java 23.0.1 with PID 22312 (C:\Users\伍建玮\IdeaProjects\gishistorymap\target\classes started by 伍建玮 in C:\Users\伍建玮\IdeaProjects\GISHISTORYMAP)
+2025-03-09 18:30:55,000 INFO (SpringApplication.java:652)- No active profile set, falling back to 1 default profile: "default"
+2025-03-09 18:31:21,696 INFO (StartupInfoLogger.java:59)- Started GishistorymapApplication in 26.714 seconds (process running for 52.216)
+2025-03-09 18:31:22,103 INFO (MapController.java:68)- 入参类别：prefpgn，起始时间：-5000，截至时间：-221
